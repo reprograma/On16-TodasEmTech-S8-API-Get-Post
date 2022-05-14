@@ -1,0 +1,137 @@
+[
+    {
+        "id": "7e3a0658-516b-4cb9-9a93-146b7e1a0905",
+        "category-name": "Home",
+        "tasks": [
+            {
+                "id": "263f7900-cc15-49eb-ade1-3394bdfe9ce6",
+                "name": "Clean room",
+                "create-date": "2021-06-23T18:25:43.51Z",
+                "due-date": "2021-06-24T23:59:59.99Z",
+                "execution-date": null
+            },
+            {
+                "id": "ce16f2fd-0c80-4577-92f2-720f6e4316d4",
+                "name": "Get storage unit",
+                "create-date": "2021-06-02T08:11:02Z",
+                "due-date": null,
+                "execution-date": "2021-06-08T10:01:49Z"
+            },
+            {
+                "id": "cbdce4c2-2e46-4741-92cd-31aca1059ae8",
+                "name": "Shop Groceries",
+                "create-date": "2021-06-12T01:53:52Z",
+                "due-date": null,
+                "execution-date": null,
+                "subtasks": [
+                    {
+                        "id": "340d7a45-97e3-45a9-a69f-f054531bc7e0",
+                        "name": "Bread - White, Sliced",
+                        "create-date": "2021-06-20T10:53:01Z",
+                        "due-date": null,
+                        "execution-date": "2021-06-29T20:01:26Z"
+                    },
+                    {
+                        "id": "6f4c3c8c-f5ae-46f1-8da7-f4f6e0dc4232",
+                        "name": "Table Cloth 54x72 White",
+                        "create-date": "2021-07-01T01:24:46Z",
+                        "due-date": null,
+                        "execution-date": null
+                    },
+                    {
+                        "id": "450684df-b47b-4dff-8110-0da41076d615",
+                        "name": "Bulgar",
+                        "create-date": "2021-06-14T12:15:00Z",
+                        "due-date": null,
+                        "execution-date": "2021-06-24T08:18:16Z"
+                    },
+                    {
+                        "id": "22b55d09-f4ad-4757-9d7b-d6a3ae3cdb2a",
+                        "name": "Split Peas - Green, Dry",
+                        "create-date": "2021-06-13T22:28:51Z",
+                        "due-date": null,
+                        "execution-date": "2021-06-18T17:01:51Z"
+                    },
+                    {
+                        "id": "35af46bc-4ff2-4a7c-824e-7f84ffcdf20b",
+                        "name": "Chinese Foods - Thick Noodles",
+                        "create-date": "2021-06-26T07:31:43Z",
+                        "due-date": null,
+                        "execution-date": "2021-06-27T12:22:15Z"
+                    },
+                    {
+                        "id": "0ac44e95-844e-4012-82ad-3cb770a92f0a",
+                        "name": "Vinegar - Champagne",
+                        "create-date": "2021-06-14T02:05:26Z",
+                        "due-date": null,
+                        "execution-date": null
+                    },
+                    {
+                        "id": "9fd15404-7f3d-41ed-a913-0e9e7021d81e",
+                        "name": "Lamb - Shoulder, Boneless",
+                        "create-date": "2021-06-28T21:14:09Z",
+                        "due-date": null,
+                        "execution-date": "2021-07-02T14:51:28Z"
+                    },
+                    {
+                        "id": "996328bc-762d-4238-bec8-b882dd96db83",
+                        "name": "Water - San Pellegrino",
+                        "create-date": "2021-06-13T14:11:33Z",
+                        "due-date": null,
+                        "execution-date": null
+                    },
+                    {
+                        "id": "6b96c576-9a82-485d-b114-daac71d84252",
+                        "name": "Daikon Radish",
+                        "create-date": "2021-06-25T06:26:50Z",
+                        "due-date": null,
+                        "execution-date": "2021-07-02T02:04:28Z"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "d97e653d-12fb-4544-be53-aea8ae91827f",
+        "category-name": "Work",
+        "tasks": [
+            {
+                "id": "7ac97b05-7474-4b35-a209-5eeaf23030b8",
+                "name": "Analysis",
+                "create-date": "2021-06-20T21:46:12Z",
+                "due-date": "2021-06-28T12:00:00.00Z",
+                "execution-date": null
+            },
+            {
+                "id": "f187211a-bb7a-40da-829a-2765c110e800",
+                "name": "Sorting",
+                "create-date": "2021-06-23T18:25:43.511Z",
+                "due-date": null,
+                "execution-date": null,
+                "subtasks": [
+                    {
+                        "id": "f0bcbabc-0491-4edc-b93d-8cb13a765790",
+                        "name": "Save files",
+                        "create-date": "2021-06-23T18:25:43.511Z",
+                        "due-date": null,
+                        "execution-date": null
+                    },
+                    {
+                        "id": "fa7b48a0-aec2-4d17-a7f1-b2352bb5c42c",
+                        "name": "Sort files",
+                        "create-date": "2021-06-23T18:25:43.511Z",
+                        "due-date": null,
+                        "execution-date": null
+                    },
+                    {
+                        "id": "1476c9c8-27e1-4fb2-9e4f-a16ec450d3bc",
+                        "name": "Plot data",
+                        "create-date": "2021-06-23T18:25:43.511Z",
+                        "due-date": null,
+                        "execution-date": null
+                    }
+                ]
+            }
+        ]
+    }
+]

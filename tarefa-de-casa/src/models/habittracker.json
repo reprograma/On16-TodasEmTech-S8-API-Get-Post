@@ -1,0 +1,185 @@
+{
+    "habits": [
+        {
+            "id": "d9b73286-6e6b-4e47-9127-a57c667c2dee",
+            "name": "Beber 2l de água",
+            "description": null
+        },
+        {
+            "id": "5cfd6032-a51e-418a-bcac-83bdc496b425",
+            "name": "Ler um capítulo de 'Floresta é nome do mundo'",
+            "description": null
+        },
+        {
+            "id": "7cd104cf-a1a3-4f45-a1f8-3d63a9f56e37",
+            "name": "Fazer a cama",
+            "description": "Fazer a cama é um bom jeito de começar o dia com pelo menos uma coisa feita"
+        },
+        {
+            "id": "47ce2d51-23a0-400d-b5b8-95512270a2f6",
+            "name": "Estudar Microsserviços",
+            "description": "NET-Microservices-Architecture-for-Containerized-NET-Applications.pdf"
+        },
+        {
+            "id": "05cb820c-4485-47c1-9ef0-2464fbf72685",
+            "name": "Treino de Kendo",
+            "description": null
+        },
+        {
+            "id": "49341a9e-0907-42fe-977b-c8c37997c62f",
+            "name": "Comer meus vegetais",
+            "description": null
+        },
+        {
+            "id": "a652a261-2e73-4f11-8271-11a569f2445e",
+            "name": "Comer frutas",
+            "description": null
+        },
+        {
+            "id": "a7eed511-039c-4ce5-81df-3428b5bbb725",
+            "name": "Tomar o remedinho",
+            "description": "De manhã, depois do café"
+        }
+    ],
+    "tracker": [
+        {
+            "id": "fbbab8e9-462b-4759-a9d4-3e6b8a5e5d3f",
+            "month": 6,
+            "year": 2021,
+            "days": [
+                {
+                    "habit_id": "a7eed511-039c-4ce5-81df-3428b5bbb725",
+                    "day": 28
+                },
+                {
+                    "habit_id": "05cb820c-4485-47c1-9ef0-2464fbf72685",
+                    "day": 28
+                },
+                {
+                    "habit_id": "a7eed511-039c-4ce5-81df-3428b5bbb725",
+                    "day": 29
+                },
+                {
+                    "habit_id": "a652a261-2e73-4f11-8271-11a569f2445e",
+                    "day": 29
+                },
+                {
+                    "habit_id": "7cd104cf-a1a3-4f45-a1f8-3d63a9f56e37",
+                    "day": 30
+                },
+                {
+                    "habit_id": "7cd104cf-a1a3-4f45-a1f8-3d63a9f56e37",
+                    "day": 30
+                },
+                {
+                    "habit_id": "a7eed511-039c-4ce5-81df-3428b5bbb725",
+                    "day": 30
+                }
+            ]
+        },
+        {
+            "id": "8ef09472-c3aa-4117-9bca-a95541c8162f",
+            "month": 7,
+            "year": 2021,
+            "days": [
+                {
+                    "habit_id": "a7eed511-039c-4ce5-81df-3428b5bbb725",
+                    "day": 1
+                },
+                {
+                    "habit_id": "7cd104cf-a1a3-4f45-a1f8-3d63a9f56e37",
+                    "day": 1
+                },
+                {
+                    "habit_id": "a652a261-2e73-4f11-8271-11a569f2445e",
+                    "day": 1
+                },
+                {
+                    "habit_id": "a7eed511-039c-4ce5-81df-3428b5bbb725",
+                    "day": 2
+                },
+                {
+                    "habit_id": "7cd104cf-a1a3-4f45-a1f8-3d63a9f56e37",
+                    "day": 2
+                },
+                {
+                    "habit_id": "a7eed511-039c-4ce5-81df-3428b5bbb725",
+                    "day": 3
+                },
+                {
+                    "habit_id": "7cd104cf-a1a3-4f45-a1f8-3d63a9f56e37",
+                    "day": 3
+                },
+                {
+                    "habit_id": "a652a261-2e73-4f11-8271-11a569f2445e",
+                    "day": 3
+                },
+                {
+                    "habit_id": "05cb820c-4485-47c1-9ef0-2464fbf72685",
+                    "day": 3
+                },
+                {
+                    "habit_id": "a7eed511-039c-4ce5-81df-3428b5bbb725",
+                    "day": 4
+                },
+                {
+                    "habit_id": "7cd104cf-a1a3-4f45-a1f8-3d63a9f56e37",
+                    "day": 4
+                },
+                {
+                    "habit_id": "a7eed511-039c-4ce5-81df-3428b5bbb725",
+                    "day": 5
+                },
+                {
+                    "habit_id": "7cd104cf-a1a3-4f45-a1f8-3d63a9f56e37",
+                    "day": 5
+                },
+                {
+                    "habit_id": "a652a261-2e73-4f11-8271-11a569f2445e",
+                    "day": 5
+                },
+                {
+                    "habit_id": "a7eed511-039c-4ce5-81df-3428b5bbb725",
+                    "day": 6
+                },
+                {
+                    "habit_id": "05cb820c-4485-47c1-9ef0-2464fbf72685",
+                    "day": 6
+                },
+                {
+                    "habit_id": "d9b73286-6e6b-4e47-9127-a57c667c2dee",
+                    "day": 6
+                },
+                {
+                    "habit_id": "a7eed511-039c-4ce5-81df-3428b5bbb725",
+                    "day": 7
+                },
+                {
+                    "habit_id": "a652a261-2e73-4f11-8271-11a569f2445e",
+                    "day": 7
+                },
+                {
+                    "habit_id": "a7eed511-039c-4ce5-81df-3428b5bbb725",
+                    "day": 8
+                },
+                {
+                    "habit_id": "a7eed511-039c-4ce5-81df-3428b5bbb725",
+                    "day": 9
+                },
+                {
+                    "habit_id": "a652a261-2e73-4f11-8271-11a569f2445e",
+                    "day": 9
+                },
+                {
+                    "habit_id": "a7eed511-039c-4ce5-81df-3428b5bbb725",
+                    "day": 10
+                },
+                {
+                    "habit_id": "7cd104cf-a1a3-4f45-a1f8-3d63a9f56e37",
+                    "day": 10
+                }
+                
+            ]
+        }
+    ]
+}
