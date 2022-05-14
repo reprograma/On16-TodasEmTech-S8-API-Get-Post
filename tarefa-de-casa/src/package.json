@@ -1,0 +1,26 @@
+{
+    "name": "on16-todasemtech-s8-api-get-post",
+    "version": "1.0.0",
+    "description": "1. Crie a pasta em que ficará seu servidor",
+    "main": "server.js",
+    "scripts": {
+      "start": "nodemon server.js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/reprograma/On16-TodasEmTech-S8-API-Get-Post.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/reprograma/On16-TodasEmTech-S8-API-Get-Post/issues"
+    },
+    "homepage": "https://github.com/reprograma/On16-TodasEmTech-S8-API-Get-Post#readme",
+    "dependencies": {
+      "express": "^4.18.1"
+    },
+    "devDependencies": {
+      "nodemon": "^2.0.16"
+    }
+  }
+  
