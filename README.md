@@ -186,7 +186,7 @@
     	   |   server.js
     		 |
     			\--📂src
-    			    |   app.js
+    			    |   
     			    |
     			    📂---controller
     			    |       NOMEController.js
@@ -226,3 +226,19 @@
 10. Agora pode começar a codar seu servidor!
 11. Para iniciar o seu servidor, é só rodar o comando **npm start 🚀**
 
+APRESENTAÇÃO DISPONÍVEL [AQUI](https://www.canva.com/design/DAFAa10ou9E/n47IbPs7FzriMdUJZIqNNw/view?utm_content=DAFAa10ou9E&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
+### Fontes: 
+
+- [https://medium.com/xp-inc/criando-uma-api-node-em-10-passos-com-express-js-52b2d612a8a9](https://medium.com/xp-inc/criando-uma-api-node-em-10-passos-com-express-js-52b2d612a8a9)
+- [https://dev.to/santypk4/bulletproof-node-js-project-architecture-4epf](https://dev.to/santypk4/bulletproof-node-js-project-architecture-4epf)
+- [https://medium.com/@diomalta/como-organizar-e-estruturar-projetos-com-node-js-4845be004899](https://medium.com/@diomalta/como-organizar-e-estruturar-projetos-com-node-js-4845be004899)
+
+- [https://github.com/Edilainesds/On14-TodasEmTech-s9-API-DELETE-PUT-PATCH/blob/edilainesilva/material/crud.pdf] (https://github.com/Edilainesds/On14-TodasEmTech-s9-API-DELETE-PUT-PATCH/blob/edilainesilva/material/crud.pdf)
+
+- [https://stackabuse.com/get-http-post-body-in-express-js/](https://stackabuse.com/get-http-post-body-in-express-js)
+- [https://www.digitalocean.com/community/tutorials/use-expressjs-to-get-url-and-post-parameters](https://www.digitalocean.com/community/tutorials/use-expressjs-to-get-url-and-post-parameters)
+- [https://medium.com/@febatista107/como-converter-os-dados-de-uma-requisi%C3%A7%C3%A3o-com-o-body-parser-2b5b93100f00](https://medium.com/@febatista107/como-converter-os-dados-de-uma-requisi%C3%A7%C3%A3o-com-o-body-parser-2b5b93100f00)
+- [https://flaviocopes.com/express-get-query-variables/](https://flaviocopes.com/express-get-query-variables/)
+- [https://docs.microsoft.com/pt-br/learn/modules/build-web-api-nodejs-express/4-route-management](https://docs.microsoft.com/pt-br/learn/modules/build-web-api-nodejs-express/4-route-management)
+- 
