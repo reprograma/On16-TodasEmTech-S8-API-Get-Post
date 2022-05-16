@@ -61,6 +61,7 @@ app.get("/pokemon?:name", (request, response) => {
     response.status(200).send(pokeByName)
 })
 
+//para buscar pelo tipo
 app.get("/pokemon?:type", (request, response) => {
 
     let typeRequest = request.params.type
@@ -70,6 +71,7 @@ app.get("/pokemon?:type", (request, response) => {
     response.status(200).send(pokeType)
 })
 
+// para adicionar um pokemons na pokedéx
 app.post("/pokemon/criar", (request, response) => {
 
     let nameRequest = request.body.name
