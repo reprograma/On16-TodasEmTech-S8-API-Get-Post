@@ -1,19 +1,4 @@
 {
-  "name": "src",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.18.1",
-    "nodemon": "^2.0.16"
-  },
-{
     "name": "on16-todasemtech-s8-api-get-post",
     "version": "1.0.0",
     "description": "1. Crie a pasta em que ficará seu servidor",
@@ -38,4 +23,4 @@
       "nodemon": "^2.0.16"
     }
   }
-
+  
