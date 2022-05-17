@@ -29,23 +29,30 @@ app.get("/ghiblifilms/buscar/:id", (request, response) => {
     response.status(200).send(filmeEncontrado)
 })
 
-app.get("/ghiblifilms/filtro", (request, response) => {
-    let tituloRequest = request.query.titulo.toLocaleLowerCase()
-    console.log(tituloRequest)
+app.get("/ghiblifilms/diretor", (request, response) => {
+    let diretorRequest = request.query.director
+    console.log(diretorRequest)
     let filmeEncontrado = ghiblifilmsJson.filter(
-        filme => filme.title.toLocaleLowerCase().includes(tituloRequest)
+        filme => filme.director.includes(diretorRequest)
     )
     response.status(200).send(filmeEncontrado)
 })
 
-app.post("/ghiblifilms", (request, response) => {
+app.post("/ghiblifilms/criar", (request, response) => {
     let tituloRequest = request.body.title
     let descricaoRequest = request.body.content
 
     let novoFilme = {
         id: (ghiblifilmsJson.length) + 1,
         title: tituloRequest,
-        content: descricaoRequest
+        content: descricaoRequest,
+        original_title: originalTitleRequest,
+        original_title_romanised: originalTitleRomanisedRequest,
+        description: descriptionRequest,
+        director: directorRequest,
+        producer: producerRequest,
+        release_date: releaseDateRequest,
+        running_time: runningTimeRequest
     }
 
     ghiblifilmsJson.push(novoFilme)
