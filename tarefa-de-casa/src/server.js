@@ -18,7 +18,7 @@ const pokedex = require('./models/pokedex.json')
 // ativando a biblioteca express para facilitar apresentação dos valores
 const express = require('express')
 const app = express()
-// para buscar os valores
+// para buscar os valores (body parser) e poder manipular com graça
 app.use(express.json()) 
 
 // para confirmar no temrinal que a porta está funcionando
@@ -54,7 +54,7 @@ app.get("/pokemon/:id", (request, response) => {
 //para buscar pelo nome
 app.get("/pokemon?:name", (request, response) => {
 
-    let nameRequest = request.params.name.toLocaleLowerCase()
+    let nameRequest = request.query.name.toLocaleLowerCase()
 
     let pokeByName = pokedex.find(poke => poke.name == nameRequest.toLocaleLowerCase())
 
