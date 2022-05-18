@@ -40,12 +40,17 @@ app.get("/ghiblifilms/diretor", (request, response) => {
 
 app.post("/ghiblifilms/criar", (request, response) => {
     let tituloRequest = request.body.title
-    let descricaoRequest = request.body.content
+    let originalTitleRequest = request.body.original_title
+    let originalTitleRomanisedRequest = request.body.original_title_romanised
+    let descriptionRequest = request.body.description
+    let directorRequest = request.body.director
+    let producerRequest = request.body.producer
+    let releaseDateRequest = request.body.release_date
+    let runningTimeRequest = request.body.running_time
 
     let novoFilme = {
         id: (ghiblifilmsJson.length) + 1,
         title: tituloRequest,
-        content: descricaoRequest,
         original_title: originalTitleRequest,
         original_title_romanised: originalTitleRomanisedRequest,
         description: descriptionRequest,
