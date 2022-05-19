@@ -1,66 +1,80 @@
-const filmesJson = require('./model/filmes.json') // acessando o json de filmes 
+const pokedexJson = require('./models/pokedex.json')
 const express = require('express')
-const app = express() //executando o express
+const { get } = require('express/lib/response')
+const { response } = require('express')
+const app = express()
 
-app.use(express.json()) // esta fazendo o body parser
+app.use(express.json())
 
-app.listen(8080, () => {
-    console.log("Servidor na porta 8080")
+app.listen(3000, () => {
+
+    console.log('Servidor pronto pra atacar.')
 })
 
-app.get("/", (request, response) => {
-    response.status(200).json([
-        {
-            "message": "Deu certo, API Filmes da Barbie"
-        }
-    ])
+app.get('/', (request, response) => {
+    response.status(200).json([{
+        'message': 'Tudo ok, pode começar.'
+    }])
 })
 
-app.get("/filmes", (request, response) => {
-    response.status(200).send(filmesJson)
+app.get('/pokemon', (request, response) => {
+
+    response.status(200).send(pokedexJson)
 })
 
-app.get("/filmes/buscar/:id", (request, response) => {
+app.get('/pokemon/:id', (request, response) => {
 
     let idRequest = request.params.id
 
-    let filmeEncontrado = filmesJson.find(filme => filme.id == idRequest)
+    let pokemonEncontrado = pokedexJson.find(pokemon => pokemon.id == idRequest)
 
-    response.status(200).send(filmeEncontrado)
+    response.status(200).send(pokemonEncontrado)
 })
 
-app.get("/filmes/filtro", (request, response) => {
+app.get('/pokemonio/name', (request, response) => {
+    
+    let nameRequest = request.query.name.toLowerCase()
+    console.log(request.query.name)
 
-    let tituloRequest = request.query.titulo.toLocaleLowerCase()
-    console.log(tituloRequest)
-
-    let filmeEncontrado = filmesJson.filter(
-        filme => filme.title.toLocaleLowerCase().includes(tituloRequest)
+    let pokemonEncontrado = pokedexJson.filter(
+        pokemon => pokemon.name.toLowerCase().includes(nameRequest)
     )
 
-    response.status(200).send(filmeEncontrado)
+    response.status(200).send(pokemonEncontrado)
+}
 
-});
+);
 
-app.post("/filmes", (request, response) => {
 
-    let tituloRequest = request.body.title
-    let descricaoRequest = request.body.content
+app.get('/pokemonio/tipo', (request, response) => {
+    console.log('entra logo')
+    let tipoRequest = request.query.type
 
-    let novoFilme = {
-        id: (filmesJson.length) + 1,
-        title: tituloRequest,
-        content: descricaoRequest
+    let pokemonEncontrado = pokedexJson.filter(
+        pokemon => pokemon.type.includes(tipoRequest)
+    )
+
+    response.status(200).send(pokemonEncontrado)
+})
+
+app.post('/pokemon/criar', (request, response) => {
+
+    let nameRequest = request.body.name
+    let typeRequest = request.body.type
+    let statsRequest = request.body.stats
+
+    let novoPokemon = {
+
+        id: (pokedexJson.length) + 1,
+        name: nameRequest,
+        type: typeRequest,
+        stats: statsRequest
     }
 
-    filmesJson.push(novoFilme)
+    pokedexJson.push(novoPokemon)
 
-    response.status(201).json(
-        [{
-            "mensagem": "seu filme foi cadastrado",
-            novoFilme
-        }]
+    response.status(201).json ([{
 
-    )
-
+        'message':'Pokemon adicionado a pokedex.', novoPokemon
+    }])
 })

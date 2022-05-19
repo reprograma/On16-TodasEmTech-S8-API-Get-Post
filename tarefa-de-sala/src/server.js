@@ -7,7 +7,7 @@ app.use(express.json()) //faz o body parser
 
 app.listen(8080, () => {
 
-    console.log('Servidor ta ON')
+    console.log('Servidor na porta 8080.')
 })
 
 app.get('/', (request, response) => { //nessa rota vemos a mensagem abaixo no postman
@@ -34,15 +34,17 @@ app.get('/filmes/buscar/:id', (request, response) => {
 
 app.get('/filmes/filtro', (request, response) => {
 
-    let tituloRequest = request.query.titulo.toLocaleLowerCase()
+    let tituloRequest = request.query.titulo.toLowerCase()
     console.log(tituloRequest)
 
     let filmeEncontrado = filmesJson.filter(
-        filme => filme.title.toLocaleLowerCase().includes(tituloRequest)
+        filme => filme.title.toLowerCase().includes(tituloRequest)
     )
 
     response.status(200).send(filmeEncontrado)
+
 })
+
 
 app.post('/filmes', (request, response) => { //post -> criar uma coisa nova, colocar um novo filme
 
