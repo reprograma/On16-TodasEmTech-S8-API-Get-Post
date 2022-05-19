@@ -5,7 +5,7 @@
   "main": "server.js",
   "s": {
     "start": "nodemon server.js"
-  },cd
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/elijanealmeida/On16-TodasEmTech-S8-API-Get-Post.git"

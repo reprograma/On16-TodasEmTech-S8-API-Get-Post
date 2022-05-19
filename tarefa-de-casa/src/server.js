@@ -1,5 +1,5 @@
 
-const ghiblifilmsJson = require('./model/ghiblifilms.json') //acessando o json de filme
+const ghiblifilmsJson = require('./models/ghiblifilms.json') //acessando o json de filme
 const express = require('express')
 const { response } = require('express')
 const app = express() //executando o express
