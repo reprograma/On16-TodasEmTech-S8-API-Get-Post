@@ -28,16 +28,21 @@ app.get("/pokemon/buscar/:id", (request, response) => {
     response.status(200).send(pokemonEncontrado)
 })
 
-// app.get("/pokemon/filtro", (request, response) => {
-//     let tipoPokemon = request.query.tipo.toLocaleLowerCase()
-//     let pokemonEncontrado = listaPokemon.filter(
-//         pokemon => pokemon.type.toLowerCase().includes(tipoPokemon)
-//         )
+app.get("/pokemon/encontrado", (request, response) => {
+    let nomeRequest = request.query.name.toLowerCase()
+    let pokemonEncontrado = listaPokemon.filter(pokemon => pokemon.name.toLowerCase().includes(nomeRequest))
 
-//     response.status(200).send(pokemonEncontrado)
-// })
+    response.status(200).send(pokemonEncontrado)
+})
 
-app.post("/pokemon", (request, response) => {
+app.get("/pokemon/tipo", (request, response) => {
+    let tipoPokemon = request.query.type.toLowerCase()
+    let tipoEncontrado = listaPokemon.filter(pokemon => pokemon.type == tipoPokemon)
+
+    response.status(200).send(tipoEncontrado)
+})
+
+app.post("/pokemon/criando", (request, response) => {
 
     let nomeRequest = request.body.name
     let tipoRequest = request.body.type
@@ -46,8 +51,8 @@ app.post("/pokemon", (request, response) => {
     let novoPokemon ={
         id: (listaPokemon.length) + 1,
         name: nomeRequest,
-        type: [ tipoRequest ],
-        // stats: { statusRequest }
+        type: tipoRequest,
+        stats: { statusRequest },
     }
     listaPokemon.push(novoPokemon)
 
