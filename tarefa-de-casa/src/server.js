@@ -41,37 +41,34 @@ app.get("/ghiblifilms/buscar/:id", (request, response) => {
 
 //Retornar um filme pelo diretor
 app.get("/ghiblifilms/diretor", (request, response) => {
-
-    let diretorRequest = request.query.director
-    console.log(diretorRequest)
-
-    let filmeEncontrado = ghiblifilmsJson.filter( filme => filme.director.includes(diretorRequest))
+    let directorRequest = request.query.director.toLowerCase()
+    
+    let filmeEncontrado = ghiblifilmsJson.filter( filme => filme.director.toLowerCase().includes(directorRequest))
 
     response.status(200).send(filmeEncontrado)
 })
 
 //Criar um novo filme
-app.post("ghiblifilms/criar", (request, response) => {
+app.post("/ghiblifilms/criar", (request, response) => {
 
-    let tituloRequest = request.body.title
-    let descricaoRequest = request.body.content
+    let filme = request.body
 
     let novoFilme = {
         id: (ghiblifilmsJson.length) + 1,
-        title: tituloRequest,
-        content: descricaoRequest,
-        original_title: originalTitleRequest,
-        original_title_romanised: originalTitleRomanisedRequest,
-        description: descriptionRequest,
-        director: directorRequest,
-        producer: producerRequest,
-        release_date: releaseDateRequest,
-        running_time: runningTimeRequest
+        title: filme.title,
+        content: filme.content,
+        original_title: filme.original_title,
+        original_title_romanised: filme.original_title_romanised,
+        description: filme.description,
+        director: filme.director,
+        producer: filme.producer,
+        release_date: filme.release_date,
+        running_time: filme.running_time 
     }
 
+
     ghiblifilmsJson.push(novoFilme) 
-    
-    
+        
     response.status(201).json(
         [{
             "mensagem" : "foi incluído o novo filme",
