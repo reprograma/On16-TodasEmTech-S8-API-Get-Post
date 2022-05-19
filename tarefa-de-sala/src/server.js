@@ -49,6 +49,7 @@ app.post("/filmes", (request, response) =>{
     
     let novoFilme = {
         id: (filmesJson.length) + 1,
+        topic: topicRequest,
         title: tituloRequest,
         content: descricaoRequest
     } 
