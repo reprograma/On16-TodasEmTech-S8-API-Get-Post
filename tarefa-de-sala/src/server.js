@@ -1,4 +1,3 @@
-
 const filmesJson = require('./model/filmes.json') // acessando o json de filmes 
 const express = require('express')
 const app = express() //executando o express
