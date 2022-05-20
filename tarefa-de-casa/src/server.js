@@ -25,7 +25,13 @@ app.get("/pokemon/buscar/:id", (request, response) => {
     let idRequest = request.params.id
     let pokemonEncontrado = listaPokemon.find(pokemon => pokemon.id == idRequest)
         
+    if (pokemonEncontrado) {
         response.status(200).send(pokemonEncontrado)
+    } else {                                                        
+        response.status(404).send({             
+            "message": "O id solicitado não pode ser encontrado"
+        })
+    }
 })
 
 app.get("/pokemon/encontrado", (request, response) => {
