@@ -9,7 +9,7 @@ app.listen(3000, () => {
 
 app.get('/', (req, res) =>{
     res.status (200).json ([{
-        "Mensagem para Eduardo": "você é muito chato, bjs"
+        "Mensagem": "Olá mundo!"
     }])
 })
 
