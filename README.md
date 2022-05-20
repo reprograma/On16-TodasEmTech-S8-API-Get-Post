@@ -19,22 +19,22 @@ O protocolo HTTP é o meio de comunicação entre Cliente e Servidor, é com ele
 
 Os verbos HTTP são os métodos usados para que a interação Cliente x Servidor aconteça. 
 
-*GET* - Busca informações
-*POST* - Cria novas informações
-*DELETE* - deleta informações
-*PUT* - modifica integralmente uma informação
-*PATCH* - modifica parte de uma informação
+- *GET* - Busca informações
+- *POST* - Cria novas informações
+- *DELETE* - deleta informações
+- *PUT* - modifica integralmente uma informação
+- *PATCH* - modifica parte de uma informação
 
 ####Códigos de status de respostas HTTP
 
 São as repostas padrão para descrever o estado de uma requisição realizada através do HTTP.
 Resumidamente se classificam:
 
-Respostas de informação (100-199),
-Respostas de sucesso (200-299),
-Redirecionamentos (300-399)
-Erros do cliente (400-499)
-Erros do servidor (500-599).
+- Respostas de informação (100-199),
+- Respostas de sucesso (200-299),
+- Redirecionamentos (300-399)
+- Erros do cliente (400-499)
+- Erros do servidor (500-599).
 
 ### ⚡ Criando rotas utilizando o Express
 
