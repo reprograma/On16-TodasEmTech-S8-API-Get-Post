@@ -24,8 +24,8 @@ app.get("/pokemon", (request, response) => {
 app.get("/pokemon/buscar/:id", (request, response) => {
     let idRequest = request.params.id
     let pokemonEncontrado = listaPokemon.find(pokemon => pokemon.id == idRequest)
-    
-    response.status(200).send(pokemonEncontrado)
+        
+        response.status(200).send(pokemonEncontrado)
 })
 
 app.get("/pokemon/encontrado", (request, response) => {
