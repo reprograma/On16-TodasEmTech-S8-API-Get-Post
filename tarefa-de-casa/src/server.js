@@ -11,7 +11,7 @@ app.listen(3000, () => {
 //Primeira rota
 app.get('/', (req, res) => {
     res.status(200).json([{
-        'Mensagem': 'Acessando zona Pokemon...'
+        'Mensagem': 'Você está acessando uma arena de batalha Pokémon! Esteja preparado!'
     }])
 })
 
@@ -20,7 +20,7 @@ app.get('/pokemons', (req, res) => {
     res.status(200).send(pokedexJson)
 })
 
-//Consultando pokemons por ID.
+//Consultando pokemons por ID
 app.get('pokemons/buscar/:id', (req, res) => {
     let idRequest = request.params.idRequest
     let pokemonEncontrado = pokedexJson.find(pokedex => pokedex.id == idRequest)
@@ -29,7 +29,7 @@ app.get('pokemons/buscar/:id', (req, res) => {
 
 //Filtrando pokemons por nome
 app.get('pokemons/filtro-nome', (req, res) => {
-    let nomeRequest = request.query.nome.toLowerCase()
+    let nomeRequest = request.query.nome.toLowerCase()Voê
     let pokemonEncontrado = pokedexJson.filter(
         pokemon => pokemon.name.toLowerCase().includes(nomeRequest)
     )
@@ -64,7 +64,7 @@ app.post('/pokemons/', (req, res) => {
 
     pokedexJson.push(novoPokemon)
     res.status(201).json([{
-        'mensagem': 'seu pokemon foi cadastrado',
+        'mensagem': 'Cadastro realizado! Com muito treinamento se tornará um grande Pokémon!',
         novoPokemon
     }])
 })

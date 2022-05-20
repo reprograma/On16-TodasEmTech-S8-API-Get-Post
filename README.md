@@ -38,7 +38,7 @@ Resumidamente se classificam:
 
 ### ⚡ Criando rotas utilizando o Express
 
-Ao criamos as rotas, conseguimos configurar a porta, o endoint, qual o tipo de requisição queremos fazer: get e qual o retorno esperado. 
+Ao criamos as rotas, conseguimos configurar a porta, o endoint, qual o tipo de requisição queremos fazer (get, post, put, delete...) e qual o retorno esperado. 
 Utilizando o Express, temos a seguinte sintaxe básica para a criação de uma rota:
 
 ```
@@ -56,7 +56,7 @@ app.get('/', function(req, res) {
 
  ***A**pplication **P**rogramming **I**nterface* - Interface de Programação de Aplicativos
 
-É um conjunto de definições e protocolos para criar e integrar softwares, com elas conseguimos usar funcionalidades já prontas e aplicá-las em outra arquitetura. Ex.: API dos Correios para consulta de CEP, API da PagSeguro para que o cliente consiga realiza pagamento em vários sites, API do Google Maps...
+É um conjunto de definições e protocolos para criar e integrar softwares, com elas conseguimos usar funcionalidades já prontas e aplicá-las em outra arquitetura. Ex.: API dos Correios para consulta de CEP, API da PagSeguro para que o cliente consiga realiza pagamento em vários sites, API do Google Maps sendo utilizada em outros softwares.
 
 <img src="img/pokemonsGo1.gif" width="400">
 
