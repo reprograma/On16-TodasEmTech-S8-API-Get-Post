@@ -24,7 +24,7 @@ app.get("/pokemon", (request, response) => {
 app.get("/pokemon/buscar/:id", (request, response) => {
     let idRequest = request.params.id
     let pokemonEncontrado = listaPokemon.find(pokemon => pokemon.id == idRequest)
-
+    
     response.status(200).send(pokemonEncontrado)
 })
 
@@ -32,14 +32,28 @@ app.get("/pokemon/encontrado", (request, response) => {
     let nomeRequest = request.query.name.toLowerCase()
     let pokemonEncontrado = listaPokemon.filter(pokemon => pokemon.name.toLowerCase().includes(nomeRequest))
 
-    response.status(200).send(pokemonEncontrado)
+    if (pokemonEncontrado.length > 0) {                           
+        response.status(200).send(pokemonEncontrado) 
+    }
+    else {                                                        
+        response.status(404).send({             
+            "message": "Esse pokemon não foi cadastrado"
+        })
+    }
 })
 
 app.get("/pokemon/tipo", (request, response) => {
     let tipoPokemon = request.query.type.toLowerCase()
     let tipoEncontrado = listaPokemon.filter(pokemon => pokemon.type == tipoPokemon)
 
-    response.status(200).send(tipoEncontrado)
+    if (tipoEncontrado.length > 0) {                           
+        response.status(200).send(tipoEncontrado) 
+    }
+    else {                                                   
+        response.status(404).send({
+            "message": "Esse tipo de pokemon não foi encontrado"
+        })
+    }
 })
 
 app.post("/pokemon/criando", (request, response) => {
