@@ -29,7 +29,7 @@ app.get('pokemons/buscar/:id', (req, res) => {
 
 //Filtrando pokemons por nome
 app.get('pokemons/filtro-nome', (req, res) => {
-    let nomeRequest = request.query.nome.toLowerCase()Voê
+    let nomeRequest = request.query.nome.toLowerCase()
     let pokemonEncontrado = pokedexJson.filter(
         pokemon => pokemon.name.toLowerCase().includes(nomeRequest)
     )
