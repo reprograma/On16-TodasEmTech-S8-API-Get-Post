@@ -5,7 +5,7 @@ const app = express() //executando o express
 
 app.use(express.json()) // esta fazendo o body parser
 
-app.listen(8080, () => {
+app.listen(8080, () => { //app.listen: Ouve/Responde só essa porta
     console.log("Servidor na porta 8080")
 })
 
@@ -65,3 +65,4 @@ app.post("/filmes", (request, response) => {
     )
 
 })
+
