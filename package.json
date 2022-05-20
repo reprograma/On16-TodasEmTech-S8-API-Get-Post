@@ -1,0 +1,25 @@
+{
+  "name": "on16-todasemtech-s8-api-get-post",
+  "version": "1.0.0",
+  "description": "1. Crie a pasta em que ficará seu servidor",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./meu-primeiro-servidor/primeiro-servidor.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/louicosta/On16-TodasEmTech-S8-API-Get-Post"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/louicosta/On16-TodasEmTech-S8-API-Get-Post"
+  },
+  "homepage": "https://github.com/louicosta/On16-TodasEmTech-S8-API-Get-Post",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
