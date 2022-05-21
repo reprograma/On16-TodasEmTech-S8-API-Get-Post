@@ -31,25 +31,37 @@ app.get("/pokemon/buscar/:id", (request, response) => {
 
 
 
-app.get("/pokemon/filtro", (request, response) => {
-    let tituloRequest = request.query.titulo.toLocaleLowerCase()
-    console.log(tituloRequest)
+app.get("/pokemon/find/filtro", (request, response) => {
+    let nameRequest = request.query.name.toLocaleLowerCase()
+    console.log(nameRequest)
     let pokeFound = meusPokemons.filter(
-        pokemon => pokemon.title.toLocaleLowerCase().includes(tituloRequest)
+        pokemon => pokemon.name.toLocaleLowerCase().includes(nameRequest)
+    )
+    response.status(200).send(pokeFound)
+});
+
+app.get("/pokemon/find/tipo", (request, response) => {
+    let typeRequest = request.query.type.toLocaleLowerCase()
+    console.log(typeRequest)
+    let pokeFound = meusPokemons.filter(
+        pokemon => pokemon.type.includes(typeRequest)
     )
     response.status(200).send(pokeFound)
 });
 
 
+
 app.post("/pokemon", (request, response) => {
 
-    let tituloRequest = request.body.title
-    let descricaoRequest = request.body.content
+    let nameRequest = request.body.name
+    let typeRequest = request.body.type
+    let statsRequest = request.body.stats
 
     let newPokemember = {
         id: (meusPokemons.length) + 1,
-        title: tituloRequest,
-        content: descricaoRequest
+        name: nameRequest,
+        type: typeRequest,
+        stats: statsRequest,
     }
 
     meusPokemons.push(newPokemember)
