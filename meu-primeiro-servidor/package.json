@@ -1,4 +1,29 @@
 {
+<<<<<<< HEAD
+  "name": "on16-todasemtech-s8-api-get-post",
+  "version": "1.0.0",
+  "description": "1. Crie a pasta em que ficará seu servidor",
+  "main": "primeiro-servidor.js",
+  
+  "scripts": {
+    "start": "nodemon primeiro-servidor.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claraguta/On16-TodasEmTech-S8-API-Get-Post.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/claraguta/On16-TodasEmTech-S8-API-Get-Post/issues"
+  },
+  "homepage": "https://github.com/claraguta/On16-TodasEmTech-S8-API-Get-Post#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16"
+  }
+}
+=======
     "name": "on16-todasemtech-s8-api-get-post",
     "version": "1.0.0",
     "description": "1. Crie a pasta em que ficará seu servidor",
@@ -24,3 +49,4 @@
     }
   }
   
+>>>>>>> 2f0e86b495749e0d3b2ce1a9641eef410051e295
