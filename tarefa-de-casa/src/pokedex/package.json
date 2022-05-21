@@ -1,0 +1,15 @@
+{
+  "name": "pokedex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "pokedex.js",
+  "scripts": {
+    "start": "nodemon pokedex.js"
+  },
+  "author": "Camila",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16"
+  }
+}
