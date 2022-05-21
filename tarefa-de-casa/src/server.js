@@ -1,12 +1,11 @@
-const meusPokemons = require('./pokedex.json') 
+const meusPokemons = require('./models/pokedex.json')
 const express = require('express')
-const app = express() 
+const app = express()
 
 app.use(express.json()) //
 app.listen(3000, () => {
     console.log("Servidor na porta 3000")
 })
-
 
 
 app.get("/", (request, response) => {
@@ -60,6 +59,6 @@ app.post("/pokemon", (request, response) => {
             "mensagem": "There is a new buddy, yay",
             newPokemember
         }]
-        )
+    )
 
-    })
+})
