@@ -25,7 +25,7 @@ Os verbos HTTP são os métodos usados para que a interação Cliente x Servidor
 - *PUT* - modifica integralmente uma informação
 - *PATCH* - modifica parte de uma informação
 
-####Códigos de status de respostas HTTP
+#### Códigos de status de respostas HTTP
 
 São as repostas padrão para descrever o estado de uma requisição realizada através do HTTP.
 Resumidamente se classificam:
