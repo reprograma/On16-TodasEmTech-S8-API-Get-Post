@@ -3,8 +3,9 @@
 ![](img/banner.gif)
 
 
-## **Atividade Semanal 8  - Turma On16** 📚 💻 
+# **Atividade Semanal 8  - Turma On16** 📚 💻 
 
+  
 
 ## ⚡ HTTP
 *Hypertext Transfer Protocol (HTTP)*
