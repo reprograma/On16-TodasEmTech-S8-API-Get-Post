@@ -4,7 +4,6 @@
 
 
 ## **Atividade Semanal 8  - Turma On16** 📚 💻 
-___
 
 
 ## ⚡ HTTP
