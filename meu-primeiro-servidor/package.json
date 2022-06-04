@@ -4,7 +4,8 @@
     "description": "1. Crie a pasta em que ficará seu servidor",
     "main": "primeiro-servidor.js",
     "scripts": {
-      "start": "nodemon primeiro-servidor.js"
+      "start": "nodemon ./primeiro-servidor.js",
+      "stop": "nodemon ./primeiro-servidor.stop.js"
     },
     "repository": {
       "type": "git",
