@@ -1,3 +1,4 @@
+// express precedida const trata-se de uma variavel
 const express = require('express');
 const app = express();
 

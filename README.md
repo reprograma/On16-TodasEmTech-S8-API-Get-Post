@@ -1,3 +1,16 @@
+# SEMANA 08 API GET E POST
+
+# O QUE APRENDI
+
+
+- A FORK O REPOSITÓRIO;
+- A UTILIZAR O TERMINAL GITBASH;
+- A CRIAR NPM I EXPRESS;
+- 
+
+
+#
+
 # Iniciando Servidor com Node.js
 
 1. Crie a pasta em que ficará seu servidor
