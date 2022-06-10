@@ -1,7 +1,10 @@
-# SEMANA 08 API - SERVIDOR NODEJS
+# SEMANA 08  _ REPROGRAMA ON 16 API - SERVIDOR NODEJS
 
+# Aula Ministrada por Mayhhara Morais
 # O QUE APRENDI 🖍 :
+<img src="https://www.alura.com.br/artigos/assets/node-js-definicao-caracteristicas-vantagens-usos/imagem3.gif"/>
 
+* Fonte imagem: Site Alura
 #### Github:
 - FORK o repositório;
 - Pull request;
