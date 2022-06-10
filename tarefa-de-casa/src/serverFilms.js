@@ -32,12 +32,12 @@ app.get("/filmes/buscar/:id", (request, response) => {
 app.get("/filmes/filtro", (request, response) => {
   let tituloRequest = request.query.titulo.toLocaleLowerCase()
   console.log(tituloRequest)
-  let idEncontrado = myghibliJson.filter((filme) =>
-    filme.title.toLocaleLowerCase().includes(diretorRequest)
+  let idFilmeEncontrado = myghibliJson.filter((filme) =>
+    filme.title.toLocaleLowerCase().includes(tituloRequest)
   )
-  response.status(200).send(idEncontrado)
+  response.status(200).send(idFilmeEncontrado)
 })
-
+// retornar o diretor
 app.post("/filmes", (request, response) => {
 
     let tituloRequest = request.body.title

@@ -1,22 +1,46 @@
 # SEMANA 08 API GET E POST
 
-# O QUE APRENDI
+# O QUE APRENDI:
 
+#### Github:
+- FORK o repositório;
+- Pull request;
 
-- A FORK O REPOSITÓRIO;
-- A UTILIZAR O TERMINAL GITBASH;
-- NPM (INIT, INSTALL, EXPRESS, NODEMON)
-- UTILIZAR O POSTMAN;
-- CRIAR UM SERVIDOR COM NODE.JS
-- CRIAR ROTAS GET PARA:
-* RETORNAR TODOS OS DADOS;
-* RETORNAR UM DADO ESPECIFICO;
-* RETORNAR POR TIPO;
+#### Gitbashere:
+- Clonar o repositório;
+- Encontrar o caminho para pasta e arquivo;
+- Criar pasta e arquivo;
 
-- CRIAR ROTAS POST PARA:
-* CADASTRAR UM NOVO DADO.
+#### NPM
 
+-Init para iniciar o pacote do projeto e criar a pasta package.json;
+- Express um framework para facilitar o desenvolvimetno das aplicações backend;
+- Nodemon uma biblioteca que auxilia o servidor a reiniciar automaticamente, evitando a quebra do código;
+ - Install para instalar todas as dependências no projeto.
 
+#### Postman:
+- Criar nova Collection;
+- Verificar status do projeto;
+- Verificar Rotas;
+- Executar os testes das API'S  e requisições do projeto.
+
+#### NODE.JS:
+- Criar novo Servidor
+
+#### Criar Rotas com GET
+* Retornar todos os registros;
+* Retornar um tipo de registro especifico;
+* Retornar por array (exemplo: id, título, diretor);
+
+#### Criar Rotas por POST
+* Cadastrar novo item.
+
+## Direfença entre req.params e req.query
+
+* req.params são os parâmetros da URL do endpoint, utilizado para definir a rota p.ex:  API/pessoas/:id 
+Obs: Neste projeto estamos referindo ao formato Json  na API Rest, a qual não tem views, e retornará somente dados.
+
+* req.query  são os parâmetros enviados após a interrogação, este são utilizado para consultar e filtrar.
 ## CONFIRA AS APLICAÇÕES DO APRENDIZADO NA PASTA TAREFA PARA CASA
 
 
