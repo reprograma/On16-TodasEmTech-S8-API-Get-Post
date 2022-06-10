@@ -41,12 +41,12 @@ app.get("/filmes/filtro", (request, response) => {
 app.post("/filmes", (request, response) => {
 
     let tituloRequest = request.body.title
-    let descricaoRequest = request.body.director
+    let diretorRequest = request.body.director
 
     let novoFilme = {
         id: (myghibliJson.length) + 1,
         title: tituloRequest,
-        director: descricaoRequest
+        director: diretorRequest
     }
 
 

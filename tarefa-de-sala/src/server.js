@@ -1,13 +1,13 @@
 
-const filmesJson = require('./model/filmes.json') // acessando o json de filmes 
+const filmesJson = require('./model/filmes.json') // acessando o json de filmes - Banco de dados
 const express = require('express')// require chamando o framework express
 const app = express() //executando o express, aqui fica guardado o require express
 
-app.use(express.json()) // esta fazendo o body parser(para configurar a resposta em formato json) 
+app.use(express.json()) // Body parser(para configurar a resposta em formato json) 
 
 // listen indica a porta para chamar
 app.listen(8080, () => {
-    console.log("Servidor na porta 8080")
+    console.log("Servidor  da Tarefa de sala está na porta 8080")
 })
 //criando uma rota do get
 app.get("/", (request, response) => {
@@ -27,9 +27,9 @@ app.get("/filmes", (request, response) => {
   */
 app.get("/filmes/buscar/:id", (request, response) => {
 
-    let idRequest = request.params.id//variavel para buscar o id(especifico) que foi requerido, neste caso o filme com id
+    let idRequest = request.params.id//variavel para buscar o id(especifico) que foi requerido, 
 
-    let filmeEncontrado = filmesJson.find(filme => filme.id == idRequest) // variavel para guardar o filme encontrado obs: (filme => filme.id ele vem do dado que estar buscando, ex: Se a busca fosse por diretor ou nome ou titulo  e so substituir )
+    let filmeEncontrado = filmesJson.find(filme => filme.id == idRequest) // variavel para guardar o filme encontrado obs: (filme => filme.id a palavra filme e um nome qualquer que eu dei para minha endpointer )
 
     response.status(200).send(filmeEncontrado)
 })
@@ -43,7 +43,7 @@ app.get("/filmes/filtro", (request, response) => {
     console.log(tituloRequest)//variavel para buscar titulo(especifico) 
 
     let filmeEncontrado = filmesJson.filter(
-        filme => filme.title.toLocaleLowerCase().includes(tituloRequest)
+        filme => filme.title.toLocaleLowerCase().includes(tituloRequest)//variavel para guardar o filme quando for encontrado,filter para filtrar por titulo - includes método para incluir o dado na request
     )
 
     response.status(200).send(filmeEncontrado)
@@ -54,13 +54,15 @@ app.get("/filmes/filtro", (request, response) => {
 app.post("/filmes", (request, response) => {
 
     let tituloRequest = request.body.title//variavel para guardar o novo titulo cadastrado, obody porque esta usando o post
-    let descricaoRequest = request.body.content//variavel para guardar a descrição e o content veio do arquivo filmes.json
-
+    let contentRequest = request.body.content//variavel para guardar a descrição e o content veio do arquivo filmes.json
+    let topicRequest = request.body.topic
     //variavel para guardar o novo filme com os seguintes dados id, title e content
     let novoFilme = {
         id: (filmesJson.length) + 1,
         title: tituloRequest,
-        content: descricaoRequest
+        content: contentRequest,
+        topic: topicRequest
+
     }
 //push vai enviar os dados para o final do array
     filmesJson.push(novoFilme)
