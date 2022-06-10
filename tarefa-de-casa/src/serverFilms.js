@@ -28,13 +28,36 @@ app.get("/filmes/buscar/:id", (request, response) => {
 
   response.status(200).send(idFilmeEncontrado);
 });
-// retornar diretor atraves do filtro
+// retornar titulo atraves do filtro
 app.get("/filmes/filtro", (request, response) => {
-  let diretorRequest = request.query.diretor.toLocaleLowerCase()
-  console.log(diretorRequest)
+  let tituloRequest = request.query.titulo.toLocaleLowerCase()
+  console.log(tituloRequest)
   let idEncontrado = myghibliJson.filter((filme) =>
-    filme.director.toLocaleLowerCase().includes(diretorRequest)
+    filme.title.toLocaleLowerCase().includes(diretorRequest)
   )
   response.status(200).send(idEncontrado)
 })
 
+app.post("/filmes", (request, response) => {
+
+    let tituloRequest = request.body.title
+    let descricaoRequest = request.body.director
+
+    let novoFilme = {
+        id: (myghibliJson.length) + 1,
+        title: tituloRequest,
+        director: descricaoRequest
+    }
+
+
+    myghibliJson.push(novoFilme)
+
+    response.status(201).json(
+        [{
+            "mensagem": "seu filme foi cadastrado",
+            novoFilme
+        }]
+
+    )
+
+})
