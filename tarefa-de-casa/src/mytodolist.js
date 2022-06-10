@@ -9,7 +9,7 @@ app.listen(3000, () => {
 });
 
 app.get("/", (request, response) => {
-  response.status(200).json([
+  response.dataVenc(200).json([
     {
       message:
         "A API do todolist está funcionando.",
@@ -23,39 +23,44 @@ app.get("/todos", (request, response) => {
 
 // retornar pelo id
 app.get("/todos/buscar/:id", (request, response) => {
-  let idRequest = request.params.id; // para guardar o id
+
+  let idRequest = request.params.id;
+   // para guardar o id
   let idtarefaEncontrado = mytodolistJson.find((tarefa) => tarefa.id == idRequest); // guardar a tarefa
 
   response.status(200).send(idtarefaEncontrado);
-});
-// retornar status atraves do filtro
+})
+// retornar data criacao das tarefas atraves do filtro
 app.get("/todos/filtro", (request, response) => {
-  let statusRequest = request.query.status.toLocaleLowerCase()
-  console.log(statusRequest)
-  let idtarefaEncontrado = mytodolistJson.filter((tarefa) =>
-    tarefa.execution-date.toLocaleLowerCase().includes(statusRequest)
-  )
+  
+  let dataCriacaoRequest = request.query.dataCriacao.toLocaleLowerCase()
+  console.log(dataCriacaoRequest)
+
+  let idtarefaEncontrado = mytodolistJson.filter(
+    tarefa => tarefa.create-date.toLocaleLowerCase().includes(dataCriacaoRequest)
+  ) 
   response.status(200).send(idtarefaEncontrado)
 })
-// retornar o diretor
+
+// retornar novo cadastro de Tarefa
 app.post("/todos", (request, response) => {
 
-    let statusRequest = request.body.execution-date
-    let diretorRequest = request.body.director
+    let nomeTarefaRequest = request.body.name
+    let dataVencRequest = request.body.due-date
 
     let novotarefa = {
         id: (mytodolistJson.length) + 1,
-        execution-date: statusRequest,
-        director: diretorRequest
+        name: nomeTarefaRequest,
+        due-date: dataVencRequest
     }
 
 
-    mytodolistJson.push(novotarefa)
+    mytodolistJson.push(novatarefa),
 
-    response.status(201).json(
+    response dataVenc(201).json(
         [{
-            "mensagem": "seu tarefa foi cadastrado",
-            novotarefa
+            "mensagem": "seu tarefa foi cadastrada",
+            novatarefa
         }]
 
     )
