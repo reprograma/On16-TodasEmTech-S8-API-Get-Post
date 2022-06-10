@@ -23,8 +23,18 @@ app.get("/filmes", (request, response) => {
 
 // retornar pelo id
 app.get("/filmes/buscar/:id", (request, response) => {
-  let idRequest = request.params.id
-  let idEncontrado = myghibliJson.find((filme) => filme.id == idRequest)
+  let idRequest = request.params.id; // para guardar o id
+  let idFilmeEncontrado = myghibliJson.find((filme) => filme.id == idRequest); // guardar o filme encontrado
 
+  response.status(200).send(idFilmeEncontrado);
+});
+// retornar diretor atraves do filtro
+app.get("/filmes/filtro", (request, response) => {
+  let diretorRequest = request.query.diretor.toLocaleLowerCase()
+  console.log(diretorRequest)
+  let idEncontrado = myghibliJson.filter((filme) =>
+    filme.director.toLocaleLowerCase().includes(diretorRequest)
+  )
   response.status(200).send(idEncontrado)
 })
+
